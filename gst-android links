@@ -12,6 +12,10 @@ Summry of all log file below:
 - Copy the build/android_x86 to android studio environment (gstreamer/x86)
 
 
+install openCv  guide:
+https://askubuntu.com/questions/1127973/how-do-i-install-opencv4-0-on-18-10
+
+
 ==============================================================
 Good descritpion of how to setup the gstreaemr androind environgment
 https://stackoverflow.com/questions/45044210/gstreamer-examples-in-android-studio
