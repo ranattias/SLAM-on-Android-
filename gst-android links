@@ -1,6 +1,10 @@
 
 bad plug in shall mode
 /home/ra/cerbero/build/build-tools/bin/meson --prefix=/home/ra/cerbero/build/dist/android_x86 --libdir=lib -Ddebug=true --default-library=both -Doptimization=s --backend=ninja --wrap-mode=nodownload --cross-file /home/ra/cerbero/build/sources/android_x86/gst-plugins-bad-1.0-1.17.0.1/_builddir/meson-cross-file.txt --native-file /home/ra/cerbero/build/sources/android_x86/gst-plugins-bad-1.0-1.17.0.1/_builddir/meson-native-file.txt -Dassrender=enabled -Dbz2=enabled -Dclosedcaption=enabled -Ddecklink=enabled -Ddtls=enabled -Ddts=enabled -Dhls=enabled -Dhls-crypto=openssl -Dkate=enabled -Dlibmms=enabled -Dopenh264=enabled -Dopenjpeg=enabled -Dopus=enabled -Drtmp=enabled -Drtmp2=enabled -Dsbc=enabled -Dsctp=enabled -Dsoundtouch=enabled -Dsrt=enabled -Dspandsp=enabled -Dsrtp=enabled -Dresindvd=disabled -Drsvg=enabled -Dvoaacenc=enabled -Dvulkan=enabled -Dwebrtc=enabled -Dwebrtcdsp=enabled -Dzbar=enabled -Dcurl=disabled -Dcurl-ssh2=disabled -Ddc1394=disabled -Ddirectfb=disabled -Dfaac=disabled -Dfaad=disabled -Dfbdev=disabled -Dfestival=disabled -Dflite=disabled -Dgme=disabled -Dgsm=disabled -Dlibde265=disabled -Dlv2=disabled -Dmodplug=disabled -Dmpeg2enc=disabled -Dmplex=disabled -Dmusepack=disabled -Dneon=disabled -Dofa=disabled -Dopenal=disabled -Dopencv=enabled -Dsndfile=disabled -Dteletext=disabled -Dvoamrwbenc=disabled -Dwildmidi=disabled -Dnvcodec=disabled -Dmsdk=disabled -Dmediafoundation=disabled -Dintrospection=disabled -Dexamples=disabled /home/ra/cerbero/build/sources/android_x86/gst-plugins-bad-1.0-1.17.0.1/
+I delete tha pkg-config file, and generat a new own
+I 
+sudo apt-get install libmount-dev
+pkg-config --list-all
 
 ==============================================================
 Summry of all log file below:
