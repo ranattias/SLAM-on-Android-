@@ -1,4 +1,11 @@
 
+workon opencv_source_2
+ 2053  export ANDROID_NDK=/home/ra/cerbero/build/android-ndk-21
+ 2054  export ANDROID_SDK=/home/ra/Android/Sdk
+
+/platforms$ python android/build_sdk.py
+
+
 from: https://github.com/davidmigloz/go-bees/wiki/Building-OpenCV4Android-from-source-code
 ./build/tools/make-standalone-toolchain.sh \
 	--platform=android-14 \
@@ -12,6 +19,9 @@ source: https://www.sisik.eu/blog/android/ndk/opencv-without-java
 need to create lib using NDK .
 cmake .. -DCMAKE_TOOLCHAIN_FILE=~/Desktop/opencv/platforms/android/android.toolchain.cmake -DANDROID_NDK=/home/ra/cerbero/build/android-ndk-21 -DANDROID_NATIVE_API_LEVEL=android-21 -DBUILD_JAVA=OFF -DBUILD_ANDROID_EXAMPLES=OFF -DBUILD_ANDROID_PROJECTS=OFF -DANDROID_STL=c++_shared -DBUILD_SHARED_LIBS=ON -DCMAKE_INSTALL_PREFIX:PATH=~/Desktop/opencv/android_build/out -DANDROID_ABI=arm64-v8a
 cmake .. -DCMAKE_TOOLCHAIN_FILE=/path/to/ndk/build/cmake/android.toolchain.cmake -DANDROID_NDK=/path/to/ndk -DANDROID_NATIVE_API_LEVEL=android-21 -DBUILD_JAVA=OFF -DBUILD_ANDROID_EXAMPLES=OFF -DBUILD_ANDROID_PROJECTS=OFF -DANDROID_STL=c++_shared -DBUILD_SHARED_LIBS=ON -DCMAKE_INSTALL_PREFIX:PATH=/absolute/path/to/opencv/android_build/out -DANDROID_ABI=arm64-v8a
+
+cmake -DCMAKE_INSTALL_PREFIX=/opt/opencv/install -DCMAKE_BUILD_TYPE=Debug  -DCMAKE_C_FLAGS='-g -pg' -DCMAKE_CXX_FLAGS='-g -pg' -DBUILD_SHARED_LIBS=OFF ~/Desktop/opencv/
+
 
 fail compile next lib: taglib,openjpeg,srt, gst-plugins-bad-, gst-rtsp-server-1.0
 		gst-plugins-good-1.0 (depend on taglib)
